@@ -1,61 +1,127 @@
 /* base */
+html,
 body {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 0 30px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #293f50;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
 a {
   text-decoration: none;
   color: inherit;
 }
+ol,
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin-bottom: 22px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #648880;
+}
 
 /* layout */
-header {
-  padding: 20px 30px;
+header,
+footer {
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  padding: 0 30px;
 }
-.header-container {
+header a,
+footer a {
+  color: #fff;
+}
+main {
+  flex: 1;
+  background: #fff;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0;
+}
+.main-wrapper {
+  flex: 1;
+  background: #fff;
+}
+.header-container,
+.footer-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+}
+.header-container h1 {
+  border-top: 4px solid #648880;
+  font-size: 48px;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+  text-transform: uppercase;
 }
 .logo-container {
   display: flex;
   flex-direction: column;
-  color: #333;
-  font-weight: bold;
-  gap: 20px;
+}
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 21px;
 }
 nav ul {
   display: flex;
-  list-style: none;
-  gap: 12px;
-  margin: 0;
-  padding: 0;
-}
-.tagline {
-  text-align: right;
-  margin: 0;
-  margin-bottom: 20px;
-  color: #555;
-}
-
-main {
-  padding: 40px 10px;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  vertical-align: top;
 }
 .description {
+  background: #293f50;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
   text-align: center;
   max-width: 800;
   margin: 0 auto 40px;
-  padding: 0 20px;
+}
+.description h1 {
+  font-size: 36px;
+}
+.description p {
+  font-size: 30x;
+  font-weight: 100;
 }
 .description a {
   display: inline-block;
   background-color: #5f9ea0;
   color: white;
-  padding: 12px 30px;
+  padding: 10px 30px;
+  border: 1px solid #fff;
   border-radius: 4px;
   transition: background-color 0.3s;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 .description a:hover {
   background-color: #4d8b8d;
@@ -65,27 +131,36 @@ main {
   gap: 20px;
   max-width: 960px;
   margin: 0 auto;
+  padding: 66px 15px 44px 15px;
 }
 .speaker-card {
   display: flex;
   flex-direction: column;
   flex: 1;
   min-width: 0;
-  border-radius: 5px;
+  vertical-align: top;
+}
+.speaker-card h3 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #a9b2b9;
+  text-transform: uppercase;
+}
+.speaker-card h4 {
+  font-size: 21px;
+  font-weight: 400;
+  color: #a9b2b9;
 }
 .speaker-card img {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
+  margin-bottom: 22px;
 }
 
 footer {
-  padding: 20px 30px;
-}
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  padding: 30px 44px 30px 44px;
+  font-size: 14px;
 }
 
 .register-container {
