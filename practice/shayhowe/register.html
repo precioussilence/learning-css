@@ -14,15 +14,15 @@
   <body>
     <a href="#main-content">Skip to main content</a>
     <header>
-      <div>
+      <div class="header-container">
         <h1>
-          <a href="index.html">
+          <a href="index.html" class="logo-container">
             <span>Styles</span>
             <span>Conference</span>
           </a>
         </h1>
         <div>
-          <h3>August 24&ndash;26th &mdash; Chicago, IL</h3>
+          <h3 class="tagline">August 24&ndash;26th &mdash; Chicago, IL</h3>
           <nav>
             <ul>
               <li><a href="index.html">Home</a></li>
@@ -38,7 +38,7 @@
 
     <main id="main-content">
       <section>
-        <div>
+        <div class="description">
           <h1>Register</h1>
           <p>
             Every year we aim to have an unbelievable time, and this year
@@ -49,7 +49,7 @@
       </section>
 
       <section>
-        <div>
+        <div class="register-container">
           <article>
             <h2>Purchase a Conference Pass</h2>
             <p>$99 per Pass</p>
@@ -79,33 +79,29 @@
               <h2 id="form-heading" class="visually-hidden">
                 Registration Form
               </h2>
-              <fieldset>
-                <legend class="visually-hidden">Personal Information</legend>
-                <div>
-                  <label for="name">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Full name"
-                    required
-                  />
-                </div>
-                <div>
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Email address"
-                    required
-                  />
-                </div>
-              </fieldset>
+              <div>
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Full name"
+                  required
+                />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email address"
+                  required
+                />
+              </div>
               <div>
                 <label for="quantity">Number of Passes</label>
-                <select title="quantity" id="quantity" name="quantity" required>
-                  <option value="" disabled>Select quantity</option>
+                <select id="quantity" name="quantity" required>
                   <option value="1" selected>1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -119,7 +115,7 @@
                   id="comments"
                   name="comments"
                   rows="4"
-                  placeholder="Any special requirements or comments"
+                  placeholder=""
                 ></textarea>
               </div>
               <button type="submit" aria-label="Purchase conference pass">
@@ -132,7 +128,7 @@
     </main>
 
     <footer>
-      <div>
+      <div class="footer-container">
         <small>&copy; Styles Conference</small>
         <nav aria-label="Secondary navigation">
           <ul>
