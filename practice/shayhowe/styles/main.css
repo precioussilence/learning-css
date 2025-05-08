@@ -1,0 +1,175 @@
+/*
+  ========================================
+  Layout
+  ========================================
+*/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+header {
+  flex: 1;
+}
+article {
+  flex: 2;
+}
+main {
+  flex: 5;
+}
+footer {
+  flex: 1;
+}
+header,
+article,
+footer {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+}
+main {
+  margin: 0;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+body {
+  background-color: #293f50;
+}
+main {
+  background-color: #fff;
+}
+nav ul {
+  list-style-type: none;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+a {
+    text-decoration: none;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+header {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+header h1 {
+    border-top: 4px solid #648880;
+    margin-top: 0px;
+    padding-top: 1em;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+}
+header h3 {
+  text-align: right;
+  padding: 1em 0 1em;
+  margin-top: 3em;
+}
+
+/*
+  ========================================
+  Article
+  ========================================
+*/
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+article > * {
+  flex: 1;
+}
+article h2 {
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #648880;
+    margin-bottom: 0;
+}
+article p {
+    font-size: 1.5em;
+    margin-top: 0;
+    color: #fff;
+    font-weight: 100;
+    line-height: 1.5;
+    text-align: center;
+}
+article div {
+    margin-bottom: 1em;
+}
+article a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1em;
+    justify-self: center;
+    align-self: center;
+    border: 1px solid #fff;
+    border-radius: 0.5em;
+}
+
+/*
+  ========================================
+  Main
+  ========================================
+*/
+main {
+  display: flex;
+}
+main > div {
+  max-width: 960px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 3rem 0 2rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
